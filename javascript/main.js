@@ -2,25 +2,80 @@ let calculo = prompt("¿Que tipo de calculo quieres hacer?")
 
 if (calculo=="suma") {
 
-        
+let comienzo
 
-        while (comeinzo != "EXIT") {
-                comienzo = prompt("Ingrese en las proximas casillas numeros para realizar la suma - Si quiere salir escriba en esta EXIT")
+let primerNumero
 
-                let primerNumero = parseInt(prompt("Ingrese el primer numero"))
+let segundoNumero
 
+let suma
 
-                function sumador(num1, num2, num3, num4) {
-                        
-                        let resultado = num1 + num2 + num3 + num4
+        while (comienzo != "EXIT") {
+                
+                 comienzo = prompt("Escriba un numero en la proxima casilla, si quiere salir escriba EXIT")
 
-                        console.log(resultado)
+                primerNumero = parseInt(prompt("Ingrese un numero"))
 
-                        return resultado
+                segundoNumero = parseInt(prompt("Ingrese otro numero"))
 
-                        
-                }
+                suma = primerNumero + segundoNumero
+
+                resultado = alert(`Su resultado es ${suma}`)
+                                
+        }
+}else if(calculo=="resta"){
+
+let comienzo
+
+let primerNumero
+
+let segundoNumero
+
+        while(comienzo != "EXIT"){
+                comienzo = prompt("Escriba un numero en la proxima casilla, si quiere salir escriba EXIT")
+                primerNumero = parseInt(prompt("Ingrese un numero"))
+
+                segundoNumero = parseInt(prompt("Ingrese otro numero"))
+
+                resta = primerNumero - segundoNumero
+
+                resultado = alert(`Su resultado es ${resta}`)
+        }
+}else if(calculo=="multiplicacion"){
+let comienzo
+
+let primerNumero
+
+let segundoNumero
+
+        while(comienzo != "EXIT"){
+                comienzo = prompt("Escriba un numero en la proxima casilla, si quiere salir escriba EXIT")
+                primerNumero = parseInt(prompt("Ingrese un numero"))
+
+                segundoNumero = parseInt(prompt("Ingrese otro numero"))
+
+                multiplicacion = primerNumero * segundoNumero
+
+                resultado = alert(`Su resultado es ${multiplicacion}`)
+        }
+}else if(calculo=="division"){
+let comienzo
+
+let primerNumero
+
+let segundoNumero
+
+        while(comienzo != "EXIT"){
+                comienzo = prompt("Escriba un numero en la proxima casilla, si quiere salir escriba EXIT")
+                primerNumero = parseInt(prompt("Ingrese un numero"))
+
+                segundoNumero = parseInt(prompt("Ingrese otro numero"))
+
+                division = primerNumero / segundoNumero
+
+                resultado = alert(`Su resultado es ${division}`)
         }
 }else{
-        alert("caca")
+        alert("Porfavor ingrese solo (suma, resta, multiplicacion o division)")
+        calculo = prompt("¿Que tipo de calculo quieres hacer?")
 }
