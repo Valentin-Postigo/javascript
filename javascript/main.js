@@ -1,5 +1,13 @@
 let calculo = prompt("¿Que tipo de calculo quieres hacer?")
 
+const title = document.getElementsByClassName("title")
+
+title.innerHTML = "calculo exitoso"
+
+console.log(title)
+
+const result = document.getElementsByClassName('resultado')
+
 let comienzo
 
 let primerNumero
@@ -32,6 +40,8 @@ if (calculo=="suma") {
                         suma = primerNumero + segundoNumero
 
                         resultado = alert(`Su resultado es ${suma}`)
+
+                        resultado.innerText = 'Calculo exitoso'
 
                                 
         }
