@@ -1,90 +1,42 @@
-let calculo = prompt("¿Que tipo de calculo quieres hacer?")
+const title = document.getElementById('title')
 
-const title = document.getElementsByClassName("title")
+const divisas = ['DOLAR HOY: $290.81' , 'EURO HOY: $308.00' ,'PESO URUGUAYO: $3.26', 'PESO CHILENO: $14.69' ,'REAL BRASILEÑO: $4.02']
 
-title.innerHTML = "calculo exitoso"
+const header = document.querySelector('header')
 
-console.log(title)
+let monedas = document.createElement('p')
 
-const result = document.getElementsByClassName('resultado')
+header.append(monedas)
 
-let comienzo
+monedas.innerHTML = divisa[Math.floor(Math.random()*divisas.length)]
 
-let primerNumero
+let divisa = prompt("Que tipo de cambio de divisa quiere realizar? (peso-dolar ; dolar-peso; peso-euro ; euro-peso ; dolar-euro ; euro-dolar ; )")
 
-let segundoNumero
+let monto
 
 let resultado
 
-let suma
+if(divisa == "peso-dolar"){
+        monto = prompt("Ingrese su monto en pesos")
 
-let calculos = ['suma', 'resta', 'division', 'multiplicacion']
+        resultado = monto * 291.91
 
-for(let i = 0; i < 4; i++){
-        console.log('calculo disponible: '+calculos[i])
+        alert(`Su monto es ${resultado} $`)
+
+}else if (divisa == "dolar-peso") {
+        monto = prompt("Ingrese su monto en dolares")
+
+        resultado = monto * 132.64
+
+        alert(`Su monto es ${resultado} $ARS`)
+}else if (divisa == "peso-euro"){
+        monto = prompt("Ingrese su monto en pesos")
+
+        resultado = monto * 298.00
+
+        alert(`Su monto es ${resultado}`)
+} else if (divisa == "euro-peso"){
+        monto = prompt("Ingrese su monto en euros")
+
+        resultado = monto * 135.88 
 }
-
-if (calculo=="suma") {
-
-
-
-        while (comienzo != "EXIT") {
-
-                
-                        comienzo = prompt("Escriba un numero en la proxima casilla, si quiere salir escriba EXIT")
-
-                        primerNumero = parseInt(prompt("Ingrese un numero"))
-                
-                        segundoNumero = parseInt(prompt("Ingrese otro numero"))
-                
-                        suma = primerNumero + segundoNumero
-
-                        resultado = alert(`Su resultado es ${suma}`)
-
-                        resultado.innerText = 'Calculo exitoso'
-
-                                
-        }
-}else if(calculo=="resta"){
-
-        while(comienzo != "EXIT"){
-
-                        comienzo = prompt("Escriba un numero en la proxima casilla, si quiere salir escriba EXIT")
-                        primerNumero = parseInt(prompt("Ingrese un numero"))
-
-                        segundoNumero = parseInt(prompt("Ingrese otro numero"))
-
-                        resta = primerNumero - segundoNumero
-
-                        resultado = alert(`Su resultado es ${resta}`)
-        }
-}else if(calculo=="multiplicacion"){
-
-        while(comienzo != "EXIT"){
-
-                        comienzo = prompt("Escriba un numero en la proxima casilla, si quiere salir escriba EXIT")
-                        primerNumero = parseInt(prompt("Ingrese un numero"))
-
-                        segundoNumero = parseInt(prompt("Ingrese otro numero"))
-
-                        multiplicacion = primerNumero * segundoNumero
-
-                        resultado = alert(`Su resultado es ${multiplicacion}`)
-        }
-}else if(calculo=="division"){
-
-        while(comienzo != "EXIT"){
-
-                        comienzo = prompt("Escriba un numero en la proxima casilla, si quiere salir escriba EXIT")
-                        primerNumero = parseInt(prompt("Ingrese un numero"))
-
-                        segundoNumero = parseInt(prompt("Ingrese otro numero"))
-
-                        division = primerNumero / segundoNumero
-
-                        resultado = alert(`Su resultado es ${division}`)
-        }
-}else{
-                        alert("Porfavor ingrese solo (suma, resta, multiplicacion o division)")
-                        calculo = prompt("¿Que tipo de calculo quieres hacer?")
-        }
