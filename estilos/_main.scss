@@ -1,0 +1,50 @@
+main {
+
+    .contenido {
+        display: grid;
+        grid-template-columns: auto 1fr;
+
+            .value {
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+                align-items: center;
+                justify-content: center;
+                    h4 {
+                        font-size: 18px;
+                    }
+
+                    .divisas {
+                        .divisa {
+                            padding: 10px;
+                        }
+                    }
+            }
+    }
+
+    background-color: #f7f7f7;
+    height: 100vh;
+    .title-bar {
+        background-color: #001233;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .text {
+        font-size: 23px;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #001845;
+        color: white;
+    }
+
+    .result {
+        color: black;
+        text-align: center;
+        padding-top: 100px;
+        font-size: 20px;
+    }
+}

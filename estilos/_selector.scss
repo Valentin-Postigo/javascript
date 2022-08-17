@@ -1,0 +1,80 @@
+.container {
+    margin-top: 100px; 
+    padding: 32px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f7f7f7;
+
+    .arrow {
+        font-size: 20px;
+        font-weight: 900;
+        padding-top: 9px;
+        color: white;
+    }
+
+    .selected {
+        background: #2f3640;
+        border-radius: 8px;
+        margin-bottom: 8px;
+        color: #f5f6fa;
+        position: relative;
+        width: 400px;
+        order: 0;
+    }
+
+
+    h2 {
+        margin: 16px;
+    }
+
+    .select-box {
+        display: flex;
+        width: 400px;
+        flex-direction: column;
+
+        .options-container::-webkit-scrollbar {
+            width: 8px;
+            background: #0d141f;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .options-container {
+            background-color: #2f3640;
+            color: #f5f6fa;
+            max-height: 0;
+            width: 100%;
+            opacity: 0;
+            transition: all 0.4s;
+            border-radius: 8px;
+            overflow: hidden;
+            order: 1;
+        }
+
+        .active {
+            max-height: 240px;
+            opacity: 1;
+            overflow-y: scroll;
+        }
+
+        .option {
+            .radio {
+                display: none;
+            }
+        }
+
+        .option,
+        .selected {
+            padding: 12px 24px;
+            cursor: pointer;
+        }
+
+        .option:hover {
+            background: #414b57;
+        }
+
+        label {
+            cursor: pointer;
+        }
+    }
+}
+

@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap");
+main {
+  background-color: #f7f7f7;
+  height: 100vh;
+}
+main .contenido {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+main .contenido .value {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+}
+main .contenido .value h4 {
+  font-size: 18px;
+}
+main .contenido .value .divisas .divisa {
+  padding: 10px;
+}
+main .title-bar {
+  background-color: #001233;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 20px;
+}
+main .text {
+  font-size: 23px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #001845;
+  color: white;
+}
+main .result {
+  color: black;
+  text-align: center;
+  padding-top: 100px;
+  font-size: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.container {
+  margin-top: 100px;
+  padding: 32px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f7f7f7;
+}
+.container .arrow {
+  font-size: 20px;
+  font-weight: 900;
+  padding-top: 9px;
+  color: white;
+}
+.container .selected {
+  background: #2f3640;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  color: #f5f6fa;
+  position: relative;
+  width: 400px;
+  order: 0;
+}
+.container h2 {
+  margin: 16px;
+}
+.container .select-box {
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+}
+.container .select-box .options-container::-webkit-scrollbar {
+  width: 8px;
+  background: #0d141f;
+  border-radius: 0 8px 8px 0;
+}
+.container .select-box .options-container {
+  background-color: #2f3640;
+  color: #f5f6fa;
+  max-height: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.4s;
+  border-radius: 8px;
+  overflow: hidden;
+  order: 1;
+}
+.container .select-box .active {
+  max-height: 240px;
+  opacity: 1;
+  overflow-y: scroll;
+}
+.container .select-box .option .radio {
+  display: none;
+}
+.container .select-box .option,
+.container .select-box .selected {
+  padding: 12px 24px;
+  cursor: pointer;
+}
+.container .select-box .option:hover {
+  background: #414b57;
+}
+.container .select-box label {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
