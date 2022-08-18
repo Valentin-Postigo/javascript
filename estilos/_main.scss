@@ -8,10 +8,15 @@ main {
                 display: flex;
                 flex-direction: column;
                 padding: 5px;
+                margin: 10px;
                 align-items: center;
                 justify-content: center;
+                border: 1px solid black;
+                
                     h4 {
                         font-size: 18px;
+                        background-color: #001845;
+                        color: white;
                     }
 
                     .divisas {
