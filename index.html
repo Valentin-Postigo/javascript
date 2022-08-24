@@ -32,31 +32,34 @@
             <div class="container">
                 <div class="container-selector">
     
-                    <div class="select-box">
+                    <div class="sub-container">
+                        <div class="select-box">
         
-                        <div class="options-container"> 
-                            <div class="option">
-                                <input type="radio" class="radio" id="automobiles" name="category">
-                                <label for="automobiles">Dolar</label>
-        
+                            <div id="options-container1" class="options-container"> 
+                                <div class="option">
+                                    <input type="radio" class="radio" id="automobiles" name="category">
+                                    <label for="automobiles">Dolar</label>
+            
+                                </div>
+            
+                                <div class="option">
+                                    <input type="radio" class="radio" id="film" name="category">
+                                    <label for="automobiles">Peso argentino</label>
+            
+                                </div>
+            
+                                <div class="option">
+                                    <input type="radio" class="radio" id="science" name="category">
+                                    <label for="science">Real</label>
+                                </div>
+                                
                             </div>
-        
-                            <div class="option">
-                                <input type="radio" class="radio" id="film" name="category">
-                                <label for="automobiles">Peso argentino</label>
-        
-                            </div>
-        
-                            <div class="option">
-                                <input type="radio" class="radio" id="science" name="category">
-                                <label for="science">Real</label>
+                            <div id="selected1" class="selected">
+                                Selecciona una divisa
                             </div>
                             
+                            
                         </div>
-                        <div class="selected">
-                            Selecciona una divisa
-                        </div>
-                        
                         <div class="input">
                             <input type="text" placeholder="Ingrese un monto">
                         </div>
@@ -65,39 +68,53 @@
                     <div class="arrow">
                         ==>
                     </div>
+                    
+                    <div class="sub-container">
+                        <div class="select-box">
         
-                    <div class="select-box">
-        
-                        <div class="options-container"> 
-                            <div class="option">
-                                <input type="radio" class="radio" id="automobiles" name="category">
-                                <label for="automobiles">Dolar</label>
-        
+                            <div id="options-container2" class="options-container"> 
+                                <div id="option2" class="option">
+                                    <input type="radio" class="radio" id="automobiles" name="category">
+                                    <label for="automobiles">Dolar</label>
+            
+                                </div>
+            
+                                <div id="option2" class="option">
+                                    <input type="radio" class="radio" id="film" name="category">
+                                    <label for="automobiles">Peso argentino</label>
+            
+                                </div>
+            
+                                <div id="option2" class="option">
+                                    <input type="radio" class="radio" id="science" name="category">
+                                    <label for="science">Real</label>
+                                </div>
+                                
                             </div>
-        
-                            <div class="option">
-                                <input type="radio" class="radio" id="film" name="category">
-                                <label for="automobiles">Peso argentino</label>
-        
-                            </div>
-        
-                            <div class="option">
-                                <input type="radio" class="radio" id="science" name="category">
-                                <label for="science">Real</label>
+                            <div id="selected2" class="selected">
+                                Selecciona una divisa
                             </div>
                             
+                            
+    
                         </div>
-                        <div class="selected">
-                            Selecciona una divisa
-                        </div>
-                        
+
                         <div class="input">
                             <input type="text" placeholder="Ingrese un monto">
                         </div>
+
                     </div>
-        
+                    
+                    
         
                 </div>
+                <div class="calculation">
+
+                    <button class="button" type="button">Calcular</button>
+
+                </div>
+                
+
                 <div class="result">
                     <h4>El valor es:</h4>
                     <p></p>
@@ -110,6 +127,8 @@
         
     </main>
     
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="javascript/main.js"></script>
+    
 </body>
 </html>

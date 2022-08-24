@@ -45,6 +45,17 @@ main .result {
   padding-top: 100px;
   font-size: 20px;
 }
+main .calculation {
+  display: flex;
+  justify-content: center;
+}
+main .calculation button {
+  height: 40px;
+  width: 70px;
+  color: white;
+  background-color: #001845;
+  border-radius: 15px;
+}
 
 * {
   margin: 0;
@@ -60,11 +71,20 @@ main .result {
   justify-content: space-around;
   background-color: #f7f7f7;
 }
+.container-selector .sub-container .input {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  margin-top: 50px;
+}
+.container-selector .sub-container .input input {
+  height: 100%;
+  text-align: center;
+}
 .container-selector .arrow {
   font-size: 20px;
   font-weight: 900;
   padding-top: 9px;
-  color: white;
 }
 .container-selector .selected {
   background: #2f3640;
@@ -99,10 +119,13 @@ main .result {
   overflow: hidden;
   order: 1;
 }
-.container-selector .select-box .options-container .input {
+.container-selector .select-box .input {
   display: flex;
-  align-content: center;
   justify-content: center;
+  align-items: center;
+}
+.container-selector .select-box .input input {
+  width: 1000px;
 }
 .container-selector .select-box .active {
   max-height: 240px;

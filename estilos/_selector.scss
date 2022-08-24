@@ -5,11 +5,25 @@
     justify-content: space-around;
     background-color: #f7f7f7;
 
+        .sub-container {
+            .input {
+                display: flex;
+                justify-content: center;
+                height: 30px;
+                margin-top: 50px;
+
+                    input {
+                        height: 100%;
+                        text-align: center;
+                    }
+            }
+        }
+
     .arrow {
         font-size: 20px;
         font-weight: 900;
         padding-top: 9px;
-        color: white;
+        
     }
 
     .selected {
@@ -49,10 +63,13 @@
             overflow: hidden;
             order: 1;
 
-                .input {
-                    display: flex;
-                    align-content: center;
-                    justify-content: center;
+        }
+        .input {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                input {
+                    width: 1000px;
                 }
         }
 
