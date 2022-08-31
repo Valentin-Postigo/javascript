@@ -48,6 +48,9 @@ main .result {
 main .calculation {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 150px;
 }
 main .calculation button {
   height: 40px;
@@ -64,85 +67,88 @@ main .calculation button {
   font-family: "Roboto Condensed", sans-serif;
 }
 
-.container-selector {
-  margin-top: 100px;
-  padding: 32px;
-  display: flex;
-  justify-content: space-around;
-  background-color: #f7f7f7;
+.container {
+  width: 100%;
 }
-.container-selector .sub-container .input {
+.container .sub-container .input {
   display: flex;
   justify-content: center;
   height: 30px;
   margin-top: 50px;
 }
-.container-selector .sub-container .input input {
+.container .sub-container .input input {
   height: 100%;
+  width: 100%;
   text-align: center;
 }
-.container-selector .arrow {
+.container .sub-container .selector {
+  width: 350px;
+}
+.container .sub-container .selector .selectField {
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.container .sub-container .selector .selectField img {
+  width: 12px;
+  transition: transform 0.5s;
+}
+.container .sub-container .selector .list {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.container .sub-container .selector .list .options {
+  width: 100%;
+  padding: 15px;
+  list-style: none;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.container .sub-container .selector .list .options:hover {
+  background: rgb(228, 228, 228);
+}
+.container .sub-container .selector .hide {
+  visibility: hidden;
+}
+.container .sub-container .selector .rotate {
+  transform: rotate(180deg);
+}
+.container .sub-container .selectors-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.container .sub-container .selectors-container .selectorYinput {
+  text-align: center;
+  margin-top: 100px;
+}
+.container .sub-container .selectors-container .selectorYinput .selector .select {
+  height: 30px;
+  color: whitesmoke;
+  background-color: #001845;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+}
+.container .arrow {
   font-size: 20px;
   font-weight: 900;
   padding-top: 9px;
 }
-.container-selector .selected {
-  background: #2f3640;
-  border-radius: 8px;
-  margin-bottom: 8px;
-  color: #f5f6fa;
-  position: relative;
-  width: 400px;
-  order: 0;
-}
-.container-selector h2 {
-  margin: 16px;
-}
-.container-selector .select-box {
-  display: flex;
-  width: 400px;
-  flex-direction: column;
-}
-.container-selector .select-box .options-container::-webkit-scrollbar {
-  width: 8px;
-  background: #0d141f;
-  border-radius: 0 8px 8px 0;
-}
-.container-selector .select-box .options-container {
-  background-color: #2f3640;
-  color: #f5f6fa;
-  max-height: 0;
-  width: 100%;
-  opacity: 0;
-  transition: all 0.4s;
-  border-radius: 8px;
-  overflow: hidden;
-  order: 1;
-}
-.container-selector .select-box .input {
+.container .input {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.container-selector .select-box .input input {
+.container .input input {
   width: 1000px;
-}
-.container-selector .select-box .active {
-  max-height: 240px;
-  opacity: 1;
-  overflow-y: scroll;
-}
-.container-selector .select-box .option .radio {
-  display: none;
-}
-.container-selector .select-box .option,
-.container-selector .select-box .selected {
-  padding: 12px 24px;
-  cursor: pointer;
-}
-.container-selector .select-box .option:hover {
-  background: #414b57;
-}
-.container-selector .select-box label {
-  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

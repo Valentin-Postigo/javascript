@@ -4,6 +4,7 @@ main {
         display: grid;
         grid-template-columns: auto 1fr;
 
+        
             .value {
                 display: flex;
                 flex-direction: column;
@@ -55,6 +56,9 @@ main {
     .calculation {
         display: flex;
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 150px;
 
         button {
             

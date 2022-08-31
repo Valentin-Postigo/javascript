@@ -1,63 +1,33 @@
-const selected1 = document.getElementById("selected1")
-const optionsContainer1 = document.getElementById("options-container1")
-
-const optionsList = document.querySelectorAll(".option")
-
-// for(let i = 0; i<selected.length; i++){
-//         selected[i].addEventListener("click", () => {
-//                 for(let i = 0; i<optionsContainer.length; i++){
-//                         optionsContainer[i].classList.toggle("active")
-//                 }
-//         })
-// }
-
-selected1.addEventListener("click", () => {
-                
-                optionsContainer1.classList.toggle("active")
-        
-                
-})
-
-optionsList.forEach( o => {
-        o.addEventListener("click", () => {
-                selected1.innerHTML = o.querySelector("label").innerHTML
-                optionsContainer1.classList.remove("active")
+let select = document.getElementById("selected")
+let input1 =document.getElementById("input1")
+console.log(input1)
+console.log(select.options)
+console.log(select)
+for(let i = 0; i<select.options.lenght; i++){
+        select.addEventListener("change", ()=>{
+                if(value=="dolar"){
+                        alert("si")
+                }
         })
-})
+}
+let value = select.options[select.selectedIndex].value;
+console.log(typeof(value))
 
-const selected2 = document.getElementById("selected2")
-const optionsContainer2 = document.getElementById("options-container2")
-const optionsList2 = document.querySelectorAll("#option2")
+console.log(value)
 
-console.log(optionsContainer2)
-selected2.addEventListener("click", () => {
+var myHeaders = new Headers();
+myHeaders.append("apikey", "UFvJuY5OlvXMZu02xTtmKeaABVHj72cH");
 
-        optionsContainer2.classList.toggle("active")
+var requestOptions = {
+  method: 'GET',
+  redirect: 'follow',
+  headers: myHeaders
+};
 
-})
-
-optionsList2.forEach( o => {
-        o.addEventListener("click", () => {
-                selected2.innerHTML = o.querySelector("label").innerHTML
-                optionsContainer2.classList.remove("active")
-        })
-})
-
-
-const button = document.getElementsByClassName("button")
-
-
-
-button.addEventListener("click", (e) => {
-                
-        swal({
-                title: "Calculo realizado",
-                text: "Su valor es: x",
-                icon: "success",
-              });
-
-        
-})
+fetch("https://api.apilayer.com/exchangerates_data/convert?to={to}&from={from}&amount={amount}", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
 
 localStorage.setItem("dolar", 295,00)
 localStorage.setItem("euro", 315,00)
