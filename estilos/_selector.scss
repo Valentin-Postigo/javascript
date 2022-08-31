@@ -29,10 +29,17 @@
                     margin-top: 100px;
 
                         .selector {
+                            border: 1px solid rgb(156, 156, 156);
+                            border-radius: 5px;
+                            box-shadow: 8px 9px 14px -8px rgba(0,0,0,0.62);
+                            -webkit-box-shadow: 8px 9px 14px -8px rgba(0,0,0,0.62);
+                            -moz-box-shadow: 8px 9px 14px -8px rgba(0,0,0,0.62);
                             .select{
-                                height: 30px;
-                                color: whitesmoke;
-                                background-color: #001845;
+                                height: 35px;
+                                width: 250px;
+                                color: black;
+                                background-color: whitesmoke;
+                                border: 1px solid gray;
                                 text-align: center;
                                 border-radius: 8px;
                                 border: none;
@@ -61,6 +68,10 @@
         align-items: center;
             input {
                 width: 1000px;
+                border: 1px solid rgb(156, 156, 156);
+                            border-radius: 5px;
+                            -webkit-box-shadow: 1px 1px 16px 0px rgba(0,0,0,0.6); 
+                            box-shadow: 1px 1px 16px 0px rgba(0,0,0,0.6);
             }
     }
 }
