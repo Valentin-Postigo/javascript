@@ -1,5 +1,10 @@
 .container{
-    width: 100%;
+    width: 1000px;
+    margin: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: black 2px 2px 10px;
+    
     .sub-container {
         .input {
             display: flex;
@@ -11,55 +16,6 @@
                     height: 100%;
                     width: 100%;
                     text-align: center;
-                }
-        }
-        .selector {
-            width: 350px;
-
-                .selectField{
-                    width: 100%;
-                    padding: 15px 20px;
-                    margin-bottom: 30px;
-                    box-sizing: border-box;
-                    background-color: rgba(255,255,255,0.7);
-                    border-radius: 6px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    cursor: pointer;
-
-                        img{
-                            width: 12px;
-                            transition: transform 0.5s;
-                        }
-                }
-
-                .list{
-                    width: 100%;
-                    background: rgba(255,255,255,0.7);
-                    border-radius: 6px;
-                    overflow: hidden;
-
-                        .options{
-                            width: 100%;
-                            padding: 15px;
-                            list-style: none;
-                            cursor: pointer;
-                            box-sizing: border-box;
-                        }
-
-                        .options:hover{
-                            background: rgb(228, 228, 228);
-                        }
-                }
-
-                .hide {
-                    visibility: hidden;
-                }
-
-                .rotate {
-                    transform: rotate(180deg);
-                    
                 }
         }
 

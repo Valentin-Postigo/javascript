@@ -1,9 +1,9 @@
 main {
 
     .contenido {
-        display: grid;
-        grid-template-columns: auto 1fr;
-
+        
+        display: flex;
+        justify-content: center;
         
             .value {
                 display: flex;
@@ -50,7 +50,7 @@ main {
     .result {
         color: black;
         text-align: center;
-        padding-top: 100px;
+        padding-top: 50px;
         font-size: 20px;
     }
     .calculation {
@@ -58,7 +58,7 @@ main {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding-top: 150px;
+        
 
         button {
             

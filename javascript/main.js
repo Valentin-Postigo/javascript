@@ -1,19 +1,13 @@
 let select = document.getElementById("selected")
 let input1 =document.getElementById("input1")
-console.log(input1)
-console.log(select.options)
-console.log(select)
-for(let i = 0; i<select.options.lenght; i++){
-        select.addEventListener("change", ()=>{
-                if(value=="dolar"){
-                        alert("si")
-                }
-        })
-}
-let value = select.options[select.selectedIndex].value;
-console.log(typeof(value))
 
+
+let value = select.options[select.selectedIndex].value;
 console.log(value)
+
+if(value=="dolar"){
+        
+}
 
 var myHeaders = new Headers();
 myHeaders.append("apikey", "UFvJuY5OlvXMZu02xTtmKeaABVHj72cH");
